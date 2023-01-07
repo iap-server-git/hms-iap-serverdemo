@@ -103,6 +103,8 @@ public class AppServer {
             default:
                 break;
         }
+        // When you receive a notification, it is recommended that you request the IAP server to verify the purchased Token according to the purchased Token in the notification content
+        // In order to avoid financial loss, it is necessary to verify the consistency of productId, price, currency and other information in InAppPurchaseData, and deliver the goods after verification
 
     }
 
